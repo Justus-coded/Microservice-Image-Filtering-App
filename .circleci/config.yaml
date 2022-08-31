@@ -30,6 +30,7 @@ jobs:
             docker build -t udagram-reverseproxy ./udagram-reverseproxy
             docker tag udagram-reverseproxy justus20/udagram-reverseproxy:v0
             echo "-------- All images succesfully built----------"
+            
             echo " ------- login in to hub--------"
             docker login -u justus20 -p $DOCKERPASS
             echo "-------------- Pushing images to dockerhub-------"
